@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Fitness Vest</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+  .container { max-width: 1000px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+  img, video { max-width: 100%; height: auto; margin-top: 10px; }
+  h1, h2 { color: #333; }
+  .center-image {display: block; margin: auto;}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Smart Fitness Vest Introduction</h1>
+  <img src="vest.JPG" alt="Smart Fitness Vest">
+  <p>This Smart Fitness Vest is a wearable device styled as a vest, is built by an ESP8266 module, a battery and a switch, is embedded with three Inertial Measurement Units (IMUs) and an Electromyography (EMG) sensor. </p>
+  <img src="vest_component.png" alt="Vest Components" class="center-image">
+  <ul>
+    <li>ESP8266:
+        <ul>
+            <li>This is a microcontroller unit (MCU) with integrated Wi-Fi capabilities. It acts as the brain of the vest, processing data collected from sensors and managing wireless communication. </li>
+            <li>The ESP8266 sends data to the cloud for further analysis and retrieves feedback for real-time interaction with the user.</li>
+        </ul>
+    </li>
+    <li>MPU6050:
+      <ul>
+          <li>This is a sensor module containing both an accelerometer and a gyroscope. </li>
+          <li>Three of these sensors are used in the vest to monitor and measure the body's movements and orientations.</li>
+          <li>This detailed motion tracking allows the system to accurately analyze workout performance, specifically tracking movements related to elbow flexion.</li>
+      </ul>
+    </li>
+    <li>EMG (Electromyography) Sensor:
+      <ul>
+          <li>This sensor is used to measure electrical activity produced by skeletal muscles.</li>
+          <li>In the vest, it is placed on muscles such as the biceps to monitor muscle exertion during exercises, helping to evaluate the intensity of muscle use and to ensure exercises are performed correctly.</li>
+      </ul>
+    </li>
+    <li>Lipo Battery + Charger module:
+      <ul>
+          <li>A lightweight lithium polymer battery powers the entire system.</li>
+          <li>Rechargeable nature and its ability to provide a high energy density, which is crucial for maintaining the vest's long-term usability and portability.</li>
+      </ul>
+    </li>
+    <li>Wireless Switch:
+      <ul>
+          <li> This component allows the user to turn the device on and off without physical wires.</li>
+          <li>It enhances the ease of use and accessibility of the vest, making it user-friendly for daily workouts.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>The bicep movements data collected during elbow flexions is stored in a cloud database for processing and used in training deep learning models for real-time movement classification, then by providing instant feedback and correcting postures through its app interface via board and models to act as a personal coach in real life.</p>
+  <img src="APP.png" alt="APP UI" class="center-image">
+
+  <h2>How to Use the Smart Fitness Vest</h2>
+  <ul>
+    <li>Wear the vest and secure the two IMU sensors at the upper torso using the elastic bands on the vest.</li>
+    <li>Strap another IMU sensor to the arm that will perform the elbow flexion.</li>
+    <li>Attach the EMG sensor electrodes to your biceps brachii or any muscle you wish to measure:
+        <ul>
+            <li>Place the yellow electrode where the muscle exertion is strongest.</li>
+            <li>Place the green electrode next to the yellow one.</li>
+            <li>Place the red electrode where the muscle exertion is weakest.</li>
+        </ul>
+    </li>
+    <li>Ensure the device is worn properly and connected to Wi-Fi.</li>
+    <li>Launch the application to start monitoring your movements and receive real-time feedback and posture correction.</li>
+  </ul>
+
+  <h2>Video Demonstration</h2>
+  <video controls>
+    <source src="path_to_your_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- <h2>How to Use the Smart Fitness Vest</h2>
+  <p>Wear the vest and secure the two IMU sensors at the upper torso using the elastic bands on the vest. Strap another IMU sensor to the arm that will perform the elbow flexion. Attach the EMG sensor electrodes to your biceps brachii or any muscle you wish to measure; place the yellow electrode where the muscle exertion is strongest, green next to it, and red where the muscle exertion is weakest. Once the device is worn and connected to Wi-Fi, launch the application to start monitoring your movements.</p>
+  <p>The vest is powered by an ESP8266 module, includes a battery and a switch, and is designed to act as a personal coach in real life by providing instant feedback and correcting postures through its app interface.</p> -->
+</div>
+</body>
+</html>
+
